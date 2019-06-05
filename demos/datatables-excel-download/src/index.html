@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jjwilly.com Demo - Datatables server-side Excel download</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/b-1.5.6/datatables.min.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4>Datatable server-side Excel download</h4>
+
+                <table class="table" id="mytable"></table>
+            </div>
+        </div>
+    </div>
+
+    <div id="spinner" style="position: fixed; z-index: 9998; top: 0; left: 0; right: 0; bottom: 0; display: none; background: rgba(0, 0, 0, 0.6);">
+        <div class="spinner-border" role="status" style="color: #fff; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 4rem; width: 4rem; margin: auto; z-index: 9999;">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

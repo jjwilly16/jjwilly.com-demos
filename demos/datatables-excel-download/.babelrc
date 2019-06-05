@@ -1,0 +1,19 @@
+{
+    "cacheDirectory": true,
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "modules": false,
+                "targets": {
+                    "browsers": [
+                        "last 5 versions",
+                        "ie >= 11"
+                    ]
+                },
+                "useBuiltIns": "usage",
+                "corejs": 3
+            }
+        ]
+    ]
+}
